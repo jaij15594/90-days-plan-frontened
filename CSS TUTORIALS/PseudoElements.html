@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+    p::before{
+        content: "This is Image render using pseudo element";
+        display: block;
+        color: red;
+
+    }
+    input::placeholder{
+        color: blue;
+    }
+    p::selection{
+        background-color: brown;
+    }
+    p::first-line{
+        background-color: black;
+        color: white;
+    }
+    p::first-letter{
+        background-color: brown;
+        color: white;
+    }
+    p::spelling-error{
+        background-color: red;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <p>Using these shorthand properties can help you write css more efficiently
+      and maintain core concept across your web pages.Feel free to apply these
+      concepts in your projects and experiment values to see the visual impact
+      on your web elements. Using these shorthand properties can help you write
+      css more efficiently and maintain core concept across your web pages.Feel
+      free to apply these concepts in your projects and experiment values to see
+      the visual impact on your web elements. Using these shorthand properties
+      can help you write css more efficiently and maintain core concept across
+      your web pages.Feel free to apply these concepts in your projects and
+      experiment values to see the visual impact on your web elements. Using
+      these shorthand properties can help you write css more efficiently and
+      maintain core concept across your web pages.</p>
+      <input type="text" placeholder="Enter First Name"/>
+</body>
+</html>

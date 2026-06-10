@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Combinators</title>
+    <style>
+      /*
+        div p{}
+        div > p{}
+        div ~ p{}
+        div + p{}
+        */
+      div > p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,rgba(0, 0, 0, 0.22) 0px 15px
+      12px; box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,rgba(0, 0, 0, 0.22) 0px
+      15px 12px; box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,rgba(0, 0, 0,
+      0.22) 0px 15px 12px; box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,rgba(0,
+      0, 0, 0.22) 0px 15px 12px;
+      <p>This is inside paragragh</p>
+      <p>This is inside paragragh</p>
+      <p>This is inside paragragh</p>
+      <p>This is inside paragragh</p>
+      <p>This is inside paragragh</p>
+    </div>
+  </body>
+</html>
