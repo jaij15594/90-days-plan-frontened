@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Income Tax Form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+      .form-container {
+        width: 100%;
+        max-width: 500px;
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      h2 {
+        text-align: center;
+        color: navy;
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        margin-top: 12px;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #999;
+        border-radius: 4px;
+        outline: none;
+      }
+
+      textarea {
+        resize: none;
+        height: 90px;
+      }
+      .gender {
+        display: flex;
+        gap: 15px;
+        margin-top: 5px;
+      }
+      .gender label {
+        font-weight: normal;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        border: none;
+        background: blue;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Income Tax Form</h2>
+      <form>
+        <label for="fullname">Full Name</label>
+        <input
+          type="text"
+          required
+          id="fullname"
+          placeholder="Enter your name"
+        /><br />
+        <label for="fathername">Father name</label>
+        <input
+          type="text"
+          required
+          id="fathername"
+          placeholder="Enter father name "
+        /><br />
+        <label for="pannumber">PAN Number</label>
+        <input
+          type="text"
+          required
+          id="pannumber"
+          placeholder="ABCDE1234F"
+        /><br />
+        <label for="aadhaar">Aadhaar Number</label>
+        <input
+          type="text"
+          required
+          id="aadhaar"
+          placeholder="Enter Aadhaar Number"
+        /><br />
+        <label>Date of Birth</label>
+        <input type="date" /><br />
+        <label>Gender</label>
+        <div class="gender">
+         <label> <input type="radio" name="gender" />Male</label>
+          <label> <input type="radio" name="gender" />Female</label>
+           <label><input type="radio" name="gender" />Other</label>
+          <br />
+        </div>
+
+        <label for="emailid">Email</label>
+        <input
+          type="email"
+          required
+          id="emailid"
+          placeholder="Enter email"
+        /><br />
+        <label for="number">Mobile Number</label>
+        <input
+          type="tel"
+          required
+          id="number"
+          placeholder="Enter mobile Number"
+        /><br />
+        <label for="annual">Annual Income</label>
+        <input
+          type="number"
+          required
+          id="annual"
+          placeholder="Enter Annual Income"
+        /><br />
+        <label>Tax Region</label>
+        <select>
+          <option value="Old Region">Old Region</option>
+          <option value="New Region">New Region</option>
+        </select>
+        <br />
+
+        <label>Address</label>
+        <textarea></textarea><br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
