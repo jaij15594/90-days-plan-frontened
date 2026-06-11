@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=p, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* This is Single Line Comment Selector*/
+      /*
+        This is Multi Line Comment Selector
+        selector,selector1,selector2{
+        property : value;
+        property2 : value;
+        color : red;
+        }
+        */
+      p,
+      li,
+      ul,
+      ol,
+      div,
+      h1 {
+        color: brown;
+      }
+      .inputField {
+        background-color: lightskyblue;
+      }
+
+     #lastname {
+        background-color: black;
+      }
+      #firstname {
+        background-color: aqua;
+      }
+      #lastname {
+        background-color: blueviolet;
+      }
+      .inputField {
+        background-color: red;
+      }
+      #lastname{
+        background-color:greenyellow;
+      }
+      button:hover{
+        cursor:ew-resize;
+      }
+      div p{
+        color: blue;
+      }
+      div > p{
+        color: aqua;
+      }
+      div + p{
+        color: green;
+      }
+      div ~ p{
+        color: red;
+      }
+      input[placeholder="enter first Name"]{
+        background-color: rgb(109, 6, 23) !important;
+        color:red;
+      }
+      li:nth-child(even){
+        color: blue;
+      }
+      input:not([disabled]){
+        background-color: black !important;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <p>This is the selectors and syntax of the css</p>
+    <ol>
+      <li>Java</li>
+      <li>Python</li>
+      <li>Dotnet</li>
+    </ol>
+    <ul>
+      <li>Java Unordered</li>
+      <li>Python</li>
+      <li>Dotnet</li>
+    </ul>
+    <h1>This is Header</h1>
+    <label for="firstname"></label>
+    <input
+      type="text" disabled
+      placeholder="enter first Name"
+      class="inputField"
+      id="firstname"
+    />
+    <label for="firstname"></label>
+    <input
+      type="text"
+      placeholder="enter last Name"
+      class="inputField"
+      id="lastname"
+    />
+    <label for="range"></label>
+    <input type="range" min="10" max="200" value="40" id="range" />
+     <div>
+      <p>This is paragraph inside division</p>
+    </div>
+    <div>
+      <p>This is paragraph inside division2</p>
+      <p>This is paragraph inside division3</p>
+    </div>
+    <p>This is paragraph outside and end of the file</p> 
+    <p>This is paragraph outside and end of the file</p> 
+    <div>
+    <button>Submit</button>
+    </div>
+  </body>
+</html>

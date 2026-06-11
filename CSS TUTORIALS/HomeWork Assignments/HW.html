@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Income Tax Form</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f2f2f2;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+      padding:20px;
+    }
+
+    .form-container{
+      width:100%;
+      max-width:500px;
+      background:#fff;
+      padding:25px;
+      border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h2{
+      text-align:center;
+      color:navy;
+      margin-bottom:20px;
+    }
+
+    label{
+      display:block;
+      margin-top:12px;
+      margin-bottom:5px;
+      font-weight:bold;
+    }
+
+    input,
+    select,
+    textarea{
+      width:100%;
+      padding:10px;
+      border:1px solid #999;
+      border-radius:4px;
+      outline:none;
+    }
+
+    textarea{
+      resize:none;
+      height:90px;
+    }
+
+    .gender{
+      display:flex;
+      gap:15px;
+      margin-top:5px;
+    }
+
+    .gender label{
+      font-weight:normal;
+    }
+
+    button{
+      width:100%;
+      padding:12px;
+      margin-top:20px;
+      border:none;
+      background:blue;
+      color:#fff;
+      font-size:16px;
+      border-radius:5px;
+      cursor:pointer;
+    }
+
+    button:hover{
+      background:darkblue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="form-container">
+
+    <h2>Income Tax Form</h2>
+
+    <form>
+
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter your name">
+
+      <label>Father Name</label>
+      <input type="text" placeholder="Enter father name">
+
+      <label>PAN Number</label>
+      <input type="text" placeholder="ABCDE1234F">
+
+      <label>Aadhaar Number</label>
+      <input type="text" placeholder="Enter Aadhaar number">
+
+      <label>Date of Birth</label>
+      <input type="date">
+
+      <label>Gender</label>
+      <div class="gender">
+        <label><input type="radio" name="gender"> Male</label>
+        <label><input type="radio" name="gender"> Female</label>
+        <label><input type="radio" name="gender"> Other</label>
+      </div>
+
+      <label>Email</label>
+      <input type="email" placeholder="Enter email">
+
+      <label>Mobile Number</label>
+      <input type="tel" placeholder="Enter mobile number">
+
+      <label>Annual Income</label>
+      <input type="number" placeholder="Enter annual income">
+
+      <label>Tax Regime</label>
+      <select>
+        <option>Old Regime</option>
+        <option>New Regime</option>
+      </select>
+
+      <label>Address</label>
+      <textarea></textarea>
+
+      <button type="submit">Submit</button>
+
+    </form>
+
+  </div>
+
+</body>
+</html>

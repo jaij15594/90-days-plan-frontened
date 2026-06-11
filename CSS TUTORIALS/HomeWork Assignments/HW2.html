@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .form-container{
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        input, select{
+            padding: 6px;
+            margin: 5px;
+        }
+
+        .btn{
+            padding: 6px 12px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .submit-btn{
+            background-color: green;
+            color: white;
+        }
+
+        .reset-btn{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+
+        <form>
+
+            <label>First Name:</label>
+            <input type="text" placeholder="Enter your first name">
+
+            <input type="text" placeholder="Enter your last name">
+
+            <input type="email" placeholder="Enter your email">
+
+            <input type="password" placeholder="Enter your password">
+
+            <input type="number" placeholder="Enter your age">
+
+            <input type="tel" placeholder="Enter your mobile number">
+
+            <input type="url" placeholder="Enter your website URL">
+
+            <br><br>
+
+            <input type="date">
+
+            <input type="color">
+
+            <input type="radio" name="gender"> Male
+
+            <input type="radio" name="gender"> Female
+
+            <input type="radio" name="gender"> Other
+
+            <input type="file">
+
+            <select>
+                <option>Select Country</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+            </select>
+
+            <select>
+                <option>Select a course</option>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+            </select>
+
+            <button type="submit" class="btn submit-btn">Submit</button>
+
+            <button type="reset" class="btn reset-btn">Reset</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
